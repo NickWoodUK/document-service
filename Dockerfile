@@ -9,5 +9,7 @@ FROM alpine:3.10
 
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
+RUN echo deno --version
+
 #ENTRYPOINT ["dono"]
 #CMD ["run", "--allow-net", "https://deno.land/std/examples/welcome.ts"]
