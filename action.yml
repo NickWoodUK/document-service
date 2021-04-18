@@ -1,0 +1,19 @@
+name: 'document service'
+description: 'Provides a service for consolidating markdown pages within GitHub into a single page.'
+author: 'Nick Wood'
+
+inputs:
+  index-page:
+    description: 'Index Page'
+    required: true
+  target-page:
+    description: 'Page to store consolidated document'
+    required: true
+
+outputs:
+  changed:
+    description: ''
+
+runs:
+  using: 'denolib/setup-deno@v2'
+  main: 'document-creator.ts'
