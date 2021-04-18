@@ -15,5 +15,5 @@ outputs:
     description: ''
 
 runs:
-  using: 'deno1'
-  main: 'document-creator.ts'
+  using: 'docker'
+  image: 'docker-file'
