@@ -9,7 +9,7 @@ FROM alpine:3.10
 
 RUN apk update && apk add curl
 
-RUN curl -fsSL https://deno.land/x/install/install.sh | sh
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh && mv /root/.deno/bin/deno /bin/deno
 
 RUN echo "hello world"
 
