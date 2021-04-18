@@ -9,6 +9,8 @@ FROM alpine:3.10
 
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
+RUN echo "hello world"
+
 RUN echo deno --version
 
 #ENTRYPOINT ["dono"]
