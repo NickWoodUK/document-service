@@ -27,7 +27,7 @@ jobs:
         run: deno fmt --check
         
       - name: Build Deno Module
-        run: deno run document-service.ts
+        run: deno run --reload document-creator.ts
 
       - name: Test Deno Module
         run: deno test --allow-none
