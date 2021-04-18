@@ -7,6 +7,8 @@ FROM alpine:3.10
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 #ENTRYPOINT ["/entrypoint.sh"]
 
+RUN apk update && apk add curl
+
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
 RUN echo "hello world"
