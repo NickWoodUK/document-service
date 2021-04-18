@@ -11,7 +11,7 @@ RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
 RUN echo "hello world"
 
-RUN echo deno --version
+RUN deno --version
 
 #ENTRYPOINT ["dono"]
 #CMD ["run", "--allow-net", "https://deno.land/std/examples/welcome.ts"]
