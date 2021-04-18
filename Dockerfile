@@ -7,7 +7,7 @@ FROM alpine:3.10
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 #ENTRYPOINT ["/entrypoint.sh"]
 
-RUN curl -fsSL https://deno.land/x/install/install.sh | sh && mv /root/.deno/bin/deno /bin/deno
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
 #ENTRYPOINT ["dono"]
 CMD ["run", "--allow-net", "https://deno.land/std/examples/welcome.ts"]
