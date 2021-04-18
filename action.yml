@@ -15,5 +15,5 @@ outputs:
     description: ''
 
 runs:
-  using: 'denolib/setup-deno@v2'
+  using: 'deno1'
   main: 'document-creator.ts'
